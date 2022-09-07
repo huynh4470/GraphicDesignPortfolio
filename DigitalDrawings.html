@@ -135,7 +135,45 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<img src="images/DigitalArt/Bird.png" alt="illustration" width="100%">
 				   <br>
 				   
-				   <br>	   
+				   <br>	
+		 <div class="timeline-label">
+			<h3>Golden Paws App Icon</h3>
+			<p> These are some app icons I made for a fictional dog clinic. A variety was created to get ideas flowing. 
+			</p>
+			<div class="w3-content w3-display-container" style="padding:40px 10px 20px 10px;">
+				<img class="mySlidesthree" src="images/GraphicDesign/AppIcons/dog 3.png" alt="Dog Icon" style="height:200px">
+				<img class="mySlidesthree" src="images/GraphicDesign/AppIcons/Face 3.png" alt="Face1 Icon" style="height:200px">
+				<img class="mySlidesthree" src="images/GraphicDesign/AppIcons/Face 4.png" alt="Face 2 Icon" style="height:200px"> 
+				<img class="mySlidesthree" src="images/GraphicDesign/AppIcons/House 2.png" alt="House1 Icon" style="height:200px"> 
+				<img class="mySlidesthree" src="images/GraphicDesign/AppIcons/House.png" alt="House2 Icon" style="height:200px"> 
+				<img class="mySlidesthree" src="images/GraphicDesign/AppIcons/Paw 7.png" alt="Paw1 Icon" style="height:200px"> 
+				<img class="mySlidesthree" src="images/GraphicDesign/AppIcons/Paw 8.png" alt="Paw2 Icon" style="height:200px"> 
+										
+									
+			<button class="w3-button w3-black w3-display-left"  onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+										
+			function plusDivs(j) {
+			showDivs(slideIndex += j);
+			}
+										
+			function showDivs(j) {
+			var k;
+			var h = document.getElementsByClassName("mySlidesthree");
+			if (j > h.length) {slideIndex = 1}
+			if (j < 1) {slideIndex = h.length}
+			for (k = 0; k < h.length; k++) {
+			h[k].style.display = "none";  
+			}
+			h[slideIndex-1].style.display = "block";  
+			}
+			</script>
+										
+			</div>		
 			
 				</div>
 				</div>
